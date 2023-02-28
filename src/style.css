@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Herr Von Muellerhoff";
+  src: url("../assets/fonts/Herr_Von_Muellerhoff/HerrVonMuellerhoff-Regular.ttf")
+    format("truetype");
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-image: url(../assets/images/pexels-2271194.jpg);
+  background-size: cover;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.25rem;
+}
+
+a:hover {
+  scale: 1.4;
+  color: rgb(247, 1, 75);
+  font-weight: bold;
+}
+
+/* dividers */
+
+.divider,
+.small-divider {
+  height: 0.125rem;
+  width: 100%;
+  background-color: rgb(56, 55, 55);
+  flex-shrink: 0;
+}
+
+/* NAV */
+
+.navigation,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  color: white;
+}
+
+/* Main Container */
+
+.main-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 4rem 1fr 4rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-self: center;
+  gap: 1rem;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 6rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.motto {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.welcome {
+  font-size: 8rem;
+  position: absolute;
+  z-index: -1;
+  bottom: 20%;
+  color: rgb(247, 1, 75);
+  font-family: "Herr Von Muellerhoff";
+}
+
+.nested-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+button {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border-style: none;
+  background-color: rgb(255, 123, 0);
+}
+
+button:hover {
+  color: white;
+}
