@@ -146,18 +146,20 @@ h1 {
 }
 
 .motto {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
-  color: white;
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(0, 0, 0) 10px 0 10px;
 }
 
 .welcome {
-  font-size: 8rem;
+  font-size: 10rem;
   position: absolute;
   z-index: -1;
-  bottom: 20%;
-  color: rgb(247, 1, 75);
+  bottom: 5%;
+  color: rgb(255, 7, 110);
   font-family: "Herr Von Muellerhoff";
+  text-shadow: rgb(82, 82, 82) 30px 30px 20px;
 }
 
 .nested-text {
