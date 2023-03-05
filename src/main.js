@@ -26,12 +26,12 @@ export function RenderMain(value) {
   mainContent.appendChild(pMotto);
   mainContent.appendChild(button);
 
-  main.appendChild(divider);
   main.appendChild(mainContent);
-  main.appendChild(divider);
 
   const mainContainer = document.querySelector(".main-container");
+
   mainContainer.appendChild(main);
+  mainContainer.appendChild(divider);
 
   return { main, mainContent };
 }

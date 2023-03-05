@@ -95,7 +95,7 @@ a:hover {
 
 .divider,
 .small-divider {
-  height: 0.125rem;
+  height: 0.175rem;
   width: 100%;
   background-color: rgb(56, 55, 55);
   flex-shrink: 0;
@@ -117,13 +117,13 @@ footer {
 .main-container {
   height: 100%;
   display: grid;
-  grid-template-rows: 4rem 1fr 4rem;
+  grid-template-rows: 4rem 0.175rem 1fr 0.175rem 4rem;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  /*  justify-content: center; */
   /* align-items: center; */
 }
 
@@ -185,7 +185,7 @@ button:hover {
 
 .menu-div {
   display: grid;
-  grid-template-columns: repeat(3, minmax(min-content, 30%));
+  grid-template-columns: repeat(2, minmax(10%, 80%));
   gap: 2rem;
   padding: 3rem;
 }

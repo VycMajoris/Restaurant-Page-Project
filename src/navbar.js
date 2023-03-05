@@ -10,7 +10,10 @@ export function renderNav() {
     a.innerHTML = navText[i];
     nav.appendChild(a);
   }
-
+  /*   const divider = createHtmlElement("div", undefined, "divider");
+  nav.appendChild(divider); */
   const mainContainer = document.querySelector(".main-container");
+  const divider = createHtmlElement("div", undefined, "divider");
   mainContainer.appendChild(nav);
+  mainContainer.appendChild(divider);
 }
