@@ -7,6 +7,13 @@ export function renderNav() {
 
   for (let i = 0; i < navText.length; i++) {
     const a = document.createElement("a");
+    i === 0
+      ? a.setAttribute("class", "anchorHome")
+      : i === 1
+      ? a.setAttribute("class", "anchorMenu")
+      : i === 2
+      ? a.setAttribute("class", "anchorAbout")
+      : null;
     a.innerHTML = navText[i];
     nav.appendChild(a);
   }

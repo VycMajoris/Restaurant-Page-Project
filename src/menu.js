@@ -107,5 +107,10 @@ export function renderMenu() {
     menuDiv.appendChild(div);
   }
 
-  main.appendChild(menuDiv);
+  if (main.childNodes.length === 0) {
+    main.appendChild(menuDiv);
+  }
+
+  const mainContainer = document.querySelector(".main-container");
+  /*  mainContainer.style.backgroundColor = "rgba(0,0,0,0.5)"; */
 }

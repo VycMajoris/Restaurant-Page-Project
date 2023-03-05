@@ -1,6 +1,7 @@
 import { renderMainHome } from "./initial-page";
 import { renderMenu } from "./menu";
 import { removeMain } from "./remove-main";
+import eventLoadFunc from "./event-listeners";
 import "./style.css";
 
 export function createHtmlElement(type, text, className = "") {
@@ -20,8 +21,13 @@ export function createImgElement(imgName, alt) {
 }
 
 renderMainHome();
+eventLoadFunc();
 
-const menuButton = document.querySelector(".menuBtn");
+/* ********* */
 
-menuButton.addEventListener("click", removeMain);
-menuButton.addEventListener("click", renderMenu);
+function removeMain2() {
+  const main = document.querySelector("main");
+  const mainContent = document.querySelector(".main-content");
+
+  main.innerHTML = "";
+}
