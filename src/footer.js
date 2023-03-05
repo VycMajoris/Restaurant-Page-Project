@@ -1,6 +1,6 @@
-import createHtmlElement from "./index.js";
+import { createHtmlElement } from "./index.js";
 
-export default function renderFooter() {
+export function renderFooter() {
   const footer = createHtmlElement("footer", undefined, undefined);
   const h2 = createHtmlElement(h2, undefined, undefined);
   h2.innerHTML = "Developed by VycMajoris";

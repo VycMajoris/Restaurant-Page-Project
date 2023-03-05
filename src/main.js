@@ -1,8 +1,8 @@
 // "main" content in the home page
 
-import createHtmlElement from "./index.js";
+import { createHtmlElement } from "./index.js";
 
-export default function renderMain() {
+export function RenderMain(value) {
   const main = createHtmlElement("main", undefined, undefined);
 
   const divider = createHtmlElement("div", undefined, "divider");
@@ -17,7 +17,7 @@ export default function renderMain() {
     "Delicious pizzas to remember for a life time!",
     "motto"
   );
-  const button = createHtmlElement("button", "SEE THE MENU", undefined);
+  const button = createHtmlElement("button", "SEE THE MENU", "menuBtn");
 
   nestedText.appendChild(pWelcome);
   nestedText.appendChild(h1Pizzamania);
@@ -32,4 +32,10 @@ export default function renderMain() {
 
   const mainContainer = document.querySelector(".main-container");
   mainContainer.appendChild(main);
+
+  return { main, mainContent };
 }
+
+/* RenderMain.prototype.mainAndContent = { main2, mainContent2 }; */
+
+/* const { main, mainContent } = renderMain(); */

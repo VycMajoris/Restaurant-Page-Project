@@ -1,6 +1,6 @@
-import createHtmlElement from "./index.js";
+import { createHtmlElement } from "./index.js";
 
-export default function renderNav() {
+export function renderNav() {
   const navText = ["HOME", "MENU", "ABOUT"];
 
   const nav = createHtmlElement("nav", undefined, "navigation");

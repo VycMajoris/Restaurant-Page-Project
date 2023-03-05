@@ -180,3 +180,12 @@ button {
 button:hover {
   color: white;
 }
+
+/* MENU */
+
+.menu-div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 30%));
+  gap: 2rem;
+  padding: 3rem;
+}
