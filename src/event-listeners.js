@@ -1,6 +1,7 @@
 import { removeMain } from "./remove-main";
 import { renderMenu } from "./menu";
 import { renderMain, createContent } from "./main";
+import { renderAbout } from "./about";
 
 export default function eventLoadFunc() {
   const menuButton = document.querySelector(".menuBtn");
@@ -17,4 +18,7 @@ export default function eventLoadFunc() {
 
   homeBtn.addEventListener("click", removeMain);
   homeBtn.addEventListener("click", createContent);
+
+  aboutBtn.addEventListener("click", removeMain);
+  aboutBtn.addEventListener("click", renderAbout);
 }

@@ -34,7 +34,7 @@ body {
     5. Improve text rendering
   */
 body {
-  line-height: 1.5;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   background-image: url(../assets/images/pexels-2271194.jpg);
   background-size: cover;
@@ -70,6 +70,7 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  text-align: center;
 }
 /*
     9. Create a root stacking context
@@ -123,7 +124,7 @@ footer {
 main {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
 }
 
@@ -140,7 +141,7 @@ main {
 
 h1 {
   color: rgb(255, 255, 255);
-  font-size: 6rem;
+  font-size: 8rem;
   font-weight: 900;
   font-style: italic;
 }
@@ -156,7 +157,7 @@ h1 {
   font-size: 10rem;
   position: absolute;
   z-index: -1;
-  bottom: 5%;
+  bottom: 45%;
   color: rgb(255, 7, 110);
   font-family: "Herr Von Muellerhoff";
   text-shadow: rgb(82, 82, 82) 30px 30px 20px;
@@ -212,4 +213,25 @@ button:hover {
 
 a:last-child:hover {
   cursor: help;
+}
+
+/* About Page */
+
+.about-div {
+  width: min(20%, 600px);
+  width: max(50%);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 10px 1000px 10px #000, 0px -10px 10px -10px #000;
+}
+
+.about-page-para {
+  color: white;
+  max-width: 60ch;
+  font-size: 1.5rem;
 }
